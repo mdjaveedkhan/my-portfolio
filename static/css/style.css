@@ -1,0 +1,146 @@
+body {
+    background-color: rgba(21, 20, 20, 0.719);
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px 0px 0px 0px;
+}
+
+.header {
+    background-color: rgb(183, 182, 200);
+    color: rgb(6, 6, 6);
+    text-align: left;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1px 0px 1px 10px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.navigation {
+    text-align: center;
+
+    ul {
+        padding: 5px 0px 10px 10px;
+        text-align: right;
+        list-style-type: none;
+        color: black;
+        text-align: right;
+        font-size: 20px;
+        margin: 0;
+        overflow: hidden;
+        background-color: rgb(133, 131, 148);
+        border-radius: 0px 0px 20px 20px;
+        display: flex;
+        gap: 4%;
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 0px;
+            display: block;
+        }
+    }
+
+}
+
+.content {
+    border-radius: 15px 15px 0px 0px;
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: rgb(183, 182, 200);
+    margin-top: 5px;
+    height:auto;
+    overflow-y: auto;
+    .profile {
+
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    p {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .professional-summary {
+        background-color: rgba(133, 131, 148, 0.382);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 10px 0px 0px 0px;
+        font-family: 'Times New Roman', Times, serif;
+        opacity: 0.9;
+        gap: 20px;
+        .profile-image {
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+    }
+
+    .summary {
+        text-align: justify;
+        flex: 2;
+    }
+
+    .projects {
+        background-color: rgba(133, 131, 148, 0.382);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        text-align: justify;
+        font-family: 'Times New Roman', Times, serif;
+        opacity: 0.9;
+
+        button {
+                margin: 10px 0px;
+                padding: 10px 20px;
+                background-color: rgb(62, 61, 68);
+                color: white;
+                border: none;
+                border-radius: 10px ;
+                cursor: pointer;
+                box-shadow: rgb(57, 56, 56) 0px 4px 8px;
+        }
+        img{
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                box-shadow: gray 0px 4px 8px;
+            }
+    }
+
+    .skills {
+        background-color: rgba(133, 131, 148, 0.382);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        opacity: 0.9;
+    }
+    .experience {
+        background-color: rgba(133, 131, 148, 0.382);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        opacity: 0.9;
+    }
+}
+
+.footer {
+    background-color: rgba(62, 61, 68, 0.575);
+    color: rgb(6, 6, 6);
+    text-align: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 0px;
+    text-align: center;
+
+}
