@@ -213,6 +213,16 @@ body {
                 border-radius: 10px;
                 box-shadow: gray 0px 4px 8px;
             }
+    button {
+                margin: 10px;
+                padding: 10px 20px;
+                background-color: rgb(62, 61, 68);
+                color: white;
+                border: none;
+                border-radius: 10px ;
+                cursor: pointer;
+                box-shadow: rgb(57, 56, 56) 0px 4px 8px;
+            }
 }
 .footer {
     background-color: rgba(62, 61, 68, 0);
