@@ -51,12 +51,13 @@ body {
             color: black;
             padding: 5px 5px;
             display: block;
+            
         }
     }
 
     .li:hover a {
-        background: #E1E8F0;
-        color: rgb(198, 24, 24);
+        
+        color: rgb(204, 201, 201);
         border-radius: 6px;
     }
 
@@ -73,8 +74,12 @@ body {
     overflow-y: auto;
 
     .profile {
-
-
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        background-color: rgba(133, 131, 148, 0.382);
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
     }
@@ -87,12 +92,12 @@ body {
         background-color: rgba(133, 131, 148, 0.382);
         padding: 10px;
         border-radius: 10px;
-        margin: 5px 0px 0px 0px;
         font-family: 'Times New Roman', Times, serif;
         opacity: 0.9;
         gap: 20px;
 
         .profile-image {
+
             img {
                 width: 200px;
                 height: 200px;
@@ -125,10 +130,21 @@ body {
             border-radius: 10px;
             box-shadow: rgb(45, 45, 45) 0px 4px 8px;
         }
+        .icon {
+            border-radius: 10px;
+            margin-right:5px;
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        
 
         button {
-            margin: 10px;
-            padding: 10px 20px;
+            margin-right: 20px;
+            display: inline;
+            padding: 5px 20px 5px 5px;
             background-color: rgb(62, 61, 68);
             color: white;
             border: none;
@@ -173,23 +189,21 @@ body {
         font-family: 'Times New Roman', Times, serif;
         opacity: 0.9;
 
-        a {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
         img {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             vertical-align: middle;
-            margin-right: 10px;
+            margin-right: 5px;
             cursor: pointer;
             border-radius: 10px;
             box-shadow: rgb(247, 245, 245) 0px 4px 8px;
-
-            
-
+        }
+       
+        a {
+            background-color: none;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
         }
 
     }
@@ -212,14 +226,14 @@ body {
     }
 
     img {
-        border-radius: 10px;
-        box-shadow: rgb(247, 245, 245) 0px 4px 8px;
-        width: 50px;
-        height: 50px;
-        vertical-align: middle;
-        margin-right: 10px;
-        cursor: pointer;
-    }
+            width: 35px;
+            height: 35px;
+            vertical-align: middle;
+            margin-right: 5px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: rgb(247, 245, 245) 0px 4px 8px;
+        }
 }
 
 .blog-content {
