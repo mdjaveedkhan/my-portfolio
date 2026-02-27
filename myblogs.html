@@ -41,8 +41,11 @@
                             onclick='window.open("https://medium.com/@mdjaveedkhan/choosing-the-right-python-data-structure-a-beginners-decision-guide-416ed5aec999", "_blank")'>Visit my Blog</button>
                     </div>
         </div>
-        <div class="footer">
-            <p>© 2026 MD JAVEED KHAN</p>
-        </div>
+        <footer class="footer">
+            &copy; <span id="current-year"></span> MD JAVEED KHAN.
+        </footer>
+        <script>
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>

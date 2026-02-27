@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,12 @@
         <link rel="icon" type="image/png" href="static/images/contact.png">
 
     </head>
+
     <body>
         <div class="header">
-            <center><h1>Contact Me</h1></center>
+            <center>
+                <h1>Contact Me</h1>
+            </center>
         </div>
         <div class="navigation">
             <ul class="ul">
@@ -21,32 +25,31 @@
             </ul>
         </div>
         <div class="contact-content">
-                <h3>Contact Information</h3>
-                <a href="mailto:contactmdjaveedkhan@gmail.com"><img
-                        src="static/images/gmail.png" alt="gmail">
-                    contactmdjaveedkhan@gmail.com</a><br><br>
+            <h3>Contact Information</h3>
+            <a href="mailto:contactmdjaveedkhan@gmail.com"><img
+                    src="static/images/gmail.png" alt="gmail">
+                contactmdjaveedkhan@gmail.com</a><br><br>
 
-                <a href="https://www.linkedin.com/in/mdjaveedkhan"
-                    ><img src="static/images/linkedin.png"
-                        alt="linkedin">
-                    @mdjaveedkhan</a><br><br>
-                <a href="https://github.com/mdjaveedkhan"
-                    ><img src="static/images/github.png"
-                        alt="github">
-                    @mdjaveedkhan</a><br><br>
-                <a href="https://www.instagram.com/itsmdjaveedkhan"
-                    ><img src="static/images/instagram.png"
-                        alt="instagram">
-                    @itsmdjaveedkhan</a><br><br>
-                <a href="https://telegram.me/mdjaveedkhan"
-                    ><img src="static/images/telegram.png"
-                        alt="telegram"> 
-                    @mdjaveedkhan</a><br><br>
+            <a href="https://www.linkedin.com/in/mdjaveedkhan"><img
+                    src="static/images/linkedin.png" alt="linkedin">
+                @mdjaveedkhan</a><br><br>
+            <a href="https://github.com/mdjaveedkhan"><img
+                    src="static/images/github.png" alt="github">
+                @mdjaveedkhan</a><br><br>
+            <a href="https://www.instagram.com/itsmdjaveedkhan"><img
+                    src="static/images/instagram.png" alt="instagram">
+                @itsmdjaveedkhan</a><br><br>
+            <a href="https://telegram.me/mdjaveedkhan"><img
+                    src="static/images/telegram.png" alt="telegram">
+                @mdjaveedkhan</a><br><br>
 
         </div>
-        <div class="footer">
-            <p>© 2026 MD JAVEED KHAN</p>
-
-        </div>
+        <footer class="footer">
+            &copy; <span id="current-year"></span> MD JAVEED KHAN.
+        </footer>
+        <script>
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+        </script>
     </body>
+
 </html>

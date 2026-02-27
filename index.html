@@ -13,7 +13,7 @@
 
     <body>
         <div class="header">
-            <center><h1>My Portfolio</h1></center>
+            <center><h1>MD JAVEED KHAN</h1></center>
         </div>
         <div class="navigation">
             <!-- add buttons
@@ -33,9 +33,10 @@
         <div class="content">
             <div class="profile">
                 <center>
-                    <h2 class="name">MD JAVEED KHAN</h2>
-                    <h3 class="title">Computer Science Engineer | Machine
-                        Learning Enthusiast | AI Developer</h3>
+                    <marquee class="marquee">I Build Intelligent AI Systems That
+                        Solve Real Problems</marquee>
+                    <h3 class="title">Python, Java & Web Developer | Research +
+                        Deployment</h3>
                 </center>
             </div>
             <div class="professional-summary">
@@ -175,36 +176,102 @@
                 </ul>
 
             </div>
-            <div class="contact">
-                <h3>Contact Details :</h3>
-                <a href="mailto:contactmdjaveedkhan@gmail.com"><img
-                        src="static/images/gmail.png" alt="gmail">
-                    contactmdjaveedkhan@gmail.com</a><br><br>
+            <div class="get-in-touch">
+                <div class="touch">
+                <h3>Get In Touch</h3>
+                <p>If you have an opportunity, collaboration idea, or just want to connect - feel free to reach out.</p>
+                </div>
+                <form action="https://formspree.io/f/mzdaoayz"
+                    method="POST">
+                    <h3>Send a Message </h3>
+                    <label>Your Name</label>
+                    <input type="text" name="name" required><br>
+                    <label>Your Email</label>
+                    <input type="email" name="email" required><br>
+                    <label>Your Message</label><br>
+                    <textarea name="message" rows="5"
+                        placeholder="Enter your message"
+                        required></textarea><br>
+                    <button type="submit" class="btn-primary">Send
+                        Message</button>
 
-                <a href="https://www.linkedin.com/in/mdjaveedkhan"
-                    ><img src="static/images/linkedin.png"
-                        alt="linkedin">
-                    @mdjaveedkhan</a><br><br>
-                <a href="https://github.com/mdjaveedkhan"
-                    ><img src="static/images/github.png"
-                        alt="github">
-                    @mdjaveedkhan</a><br><br>
-                <a href="https://www.instagram.com/itsmdjaveedkhan"
-                    ><img src="static/images/instagram.png"
-                        alt="instagram">
-                    @itsmdjaveedkhan</a><br><br>
-                <a href="https://telegram.me/mdjaveedkhan"
-                    ><img src="static/images/telegram.png"
-                        alt="telegram"> 
-                    @mdjaveedkhan</a><br><br>
+                </form>
 
             </div>
         </div>
 
-        <div class="footer">
-            <p>© 2026 MD JAVEED KHAN</p>
+        <footer class="footer">
+            &copy; <span id="current-year"></span> MD JAVEED KHAN.
+        </footer>
+        <script>
+const form = document.querySelector("form");
+const submitButton = form.querySelector("button");
 
-        </div>
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = form["name"].value.trim();
+    const email = form["email"].value.trim();
+    const message = form["message"].value.trim();
+
+    // ===== REQUIRED VALIDATION =====
+    if (!name) {
+        alert("Please enter your name.");
+        return;
+    }
+
+    if (!email) {
+        alert("Please enter your email.");
+        return;
+    }
+
+    if (!validateEmail(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    if (!message) {
+        alert("Please enter your message.");
+        return;
+    }
+
+    // ===== BUTTON LOADING STATE =====
+    submitButton.innerText = "Submitting...";
+    submitButton.disabled = true;
+
+    // ===== SEND DATA TO FORMSPREE =====
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            alert("Your message has been sent successfully!");
+            form.reset();   // Clear form
+        } else {
+            alert("Submission failed. Please try again.");
+        }
+    })
+    .catch(error => {
+        alert("Something went wrong. Please try again.");
+        console.error(error);
+    })
+    .finally(() => {
+        submitButton.innerText = "Send Message";
+        submitButton.disabled = false;
+    });
+});
+
+// ===== EMAIL VALIDATION FUNCTION =====
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
     </body>
 
 </html>
