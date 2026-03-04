@@ -59,22 +59,6 @@ The portfolio is fully responsive and optimized for:
 
 ---
 
-## 📂 Project Structure
-portfolio/
-│
-├── index.html
-├── about.html
-├── projects.html
-├── contact.html
-├── myblogs.html
-└──static
-    ├── css/
-    │ └── style.css
-    └── files/
-    └── images/
-
----
-
 ## 📸 Preview
 
 You can explore the live portfolio here:
