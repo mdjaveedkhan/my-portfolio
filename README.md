@@ -1,4 +1,4 @@
-![Portfolio Preview](assets/images/portfolio-preview.png)
+![Portfolio Preview](static/images/portfolio-preview.png)
 # 🌐 Personal Developer Portfolio
 
 This repository contains the source code for my personal developer portfolio website.  
