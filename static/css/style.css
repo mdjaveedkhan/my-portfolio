@@ -21,7 +21,7 @@ text-align:left;
 font-size:large;
 font-family:'Times New Roman',Times,serif;
 padding:1px 0 1px 10px;
-border-radius:15px 15px 0 0;
+border-radius:10px 10px 0 0;
 }
 
 .contact-navigation{
@@ -47,7 +47,7 @@ font-size:20px;
 margin:0;
 overflow:hidden;
 background-color:rgb(133,131,148);
-border-radius:0 0 20px 20px;
+border-radius:0 0 10px 10px;
 
 gap:4%;
 flex-wrap:wrap;
@@ -73,7 +73,7 @@ border-radius:6px;
 /* Content */
 
 .content{
-border-radius:15px 15px 0 0;
+border-radius:10px 10px 0 0;
 padding:5px;
 font-size:18px;
 background-color:rgb(183,182,200);
