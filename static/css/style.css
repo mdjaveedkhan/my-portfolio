@@ -57,7 +57,7 @@ body {
 .navigation ul li {
     display: inline-block;
     padding: 5px;
-    
+
 }
 
 .navigation ul a {
@@ -100,6 +100,7 @@ body {
     border-radius: 10px;
     text-align: center;
     background-color: #0f172a;
+
     .title {
         font-weight: bold;
         color: #38bdf8;
@@ -152,6 +153,7 @@ body {
         width: 100%;
     }
 }
+
 .project h2 {
     color: white;
 }
@@ -200,17 +202,24 @@ body {
 .skills,
 .experience,
 .research {
-    h3{
-        text-align: left;
-        color: #38bdf8;
-    }
     background-color: #0f172a;
     padding: 10px;
     border-radius: 10px;
     margin-top: 5px;
     opacity: 0.9;
 }
-
+.skills h3{
+    text-align: left;
+    color: #38bdf8;
+}
+.experience h3{
+    text-align: left;
+    color: #38bdf8;
+}
+.research h3{
+    text-align: left;
+    color: #38bdf8;
+}
 /* Contact Form */
 
 .get-in-touch {
@@ -289,9 +298,11 @@ body {
     border-radius: 10px;
     text-align: justify;
 }
-.projects .subheading{
+
+.projects .subheading {
     color: #38bdf8;
 }
+
 .projects h3 {
     text-align: left;
     color: #38bdf8;
@@ -333,7 +344,7 @@ body {
 
 /* Contact Page */
 
-.contact-content { 
+.contact-content {
     border-radius: 10px 10px 0 0;
     font-size: 20px;
     background-color: #323a4f;
@@ -351,7 +362,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 95%;
-    h3{
+
+    h3 {
         color: #38bdf8;
     }
 
@@ -376,15 +388,17 @@ body {
 /* Blog */
 
 .blog-content {
-   background-color: #323a4f;
-   padding: 5px;
-   border-radius: 10px 10px 0px 0px;
-   margin-top: 5px;
-   h3{
-    color: #38bdf8;
-   }
+    background-color: #323a4f;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 5px;
+
+    h3 {
+        color: #38bdf8;
+    }
 }
-.blog-content .blog{
+
+.blog-content .blog {
     background-color: #0f172a;
     padding: 10px;
     border-radius: 10px;
