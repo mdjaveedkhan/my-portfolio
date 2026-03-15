@@ -13,8 +13,13 @@ body {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+.header-container{
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+}
 .header {
+    
     background-color: #0f172a;
     color: #dadfe0;
     text-align: left;
@@ -23,7 +28,6 @@ body {
     padding: 1px 0 1px 1px;
     border-radius: 10px 10px 0 0;
 }
-
 .contact-navigation {
     text-align: center;
     padding: 1px 0;
