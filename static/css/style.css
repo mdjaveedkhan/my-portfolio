@@ -3,30 +3,33 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: #0f172a;
     color: #dadfe0;
     font-family: 'Times New Roman', Times, serif;
     margin: 5px 0 0 0;
     max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .header-container{
     position: sticky; 
     top: 0; 
     z-index: 1000;
+    border-color: #323a4f;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #0f172a;
 }
 .header {
-    
     background-color: #0f172a;
     color: #dadfe0;
     text-align: left;
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
     padding: 1px 0 1px 1px;
-    border-radius: 10px 10px 0 0;
 }
 .contact-navigation {
     text-align: center;
@@ -192,7 +195,7 @@ body {
 .project img {
     margin-bottom: 10px;
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     height: auto;
     border-radius: 10px;
     box-shadow: rgb(45, 45, 45)0 4px 8px;
@@ -466,6 +469,6 @@ footer {
     text-align: center;
     font-size: large;
     padding: 15px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 10px 10px;
     margin-top: 0;
 }
