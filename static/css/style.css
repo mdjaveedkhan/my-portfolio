@@ -7,7 +7,7 @@ body {
     color: #dadfe0;
     font-family: 'Times New Roman', Times, serif;
     margin: 5px 0 0 0;
-    max-width: 1150px;
+
     margin-left: auto;
     margin-right: auto;
     padding-left: 5px;
@@ -250,7 +250,7 @@ body {
 }
 /* Contact Form */
 
-.get-in-touch {
+#get-in-touch {
     padding: 5px;
     margin-top: 5px;
     background-color: #0f172a;
@@ -258,21 +258,21 @@ body {
     opacity: 0.9;
 }
 
-.get-in-touch .touch {
+#get-in-touch .touch {
     padding: 5px 0 0 20px;
 }
 
-.get-in-touch .touch h3 {
+#get-in-touch .touch h3 {
     margin-bottom: 0;
     font-size: 30px;
     color: #38bdf8;
 }
 
-.get-in-touch .touch p {
+#get-in-touch .touch p {
     margin-top: 5px;
 }
 
-.get-in-touch form {
+#get-in-touch form {
     border-radius: 15px;
     margin: auto;
     padding: 20px;
@@ -281,16 +281,16 @@ body {
     border-color: rgba(70, 69, 73, 0.382);
 }
 
-.get-in-touch form h3 {
+#get-in-touch form h3 {
     color: #38bdf8;
 }
 
-.get-in-touch form label {
+#get-in-touch form label {
     color: #38bdf8;
     margin-bottom: 10px;
 }
 
-.get-in-touch input {
+#get-in-touch input {
     border: none;
     width: 95%;
     border-radius: 10px;
@@ -298,14 +298,14 @@ body {
     margin-bottom: 20px;
 }
 
-.get-in-touch textarea {
+#get-in-touch textarea {
     width: 98%;
     border-radius: 10px;
     margin-bottom: 20px;
 
 }
 
-.get-in-touch button {
+#get-in-touch button {
     background-color: #38bdf8;
     font-weight: bold;
     box-shadow: rgb(247, 245, 245)0 4px 8px;
@@ -419,6 +419,7 @@ body {
 /* Blog */
 
 .blog-content {
+    align-items: center;
     background-color: #323a4f;
     padding: 5px;
     border-radius: 10px 10px 0px 0px;
@@ -435,16 +436,14 @@ body {
     border-radius: 10px;
     text-align: justify;
     margin-bottom: 5px;
-
+    
     hr {
         width: 100%;
     }
 }
 
-
 .blog-content img {
-    width: 100%;
-    height: auto;
+    
     border-radius: 10px;
     box-shadow: rgb(52, 52, 52)0 4px 8px;
 }
